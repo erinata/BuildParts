@@ -9,6 +9,7 @@ Install using Package Control (Recommanded)
 1. I guess most Sublime Text 2 users are using Sublime Package Control. If not, please install in from here <http://wbond.net/sublime_packages/package_control>
 2. Go to Preference > Package Control, and Choose "Install Package"
 3. Choose the package named "BuildParts" to install it
+4. If BuildParts is not available from Package Control, you can go to Preference > Package Control, and Choose "Add Repository". Put "https://github.com/erinata/BuildParts" (without quotes) to add the repo and try step 2 and 3 again.
 
 Install manually
 
