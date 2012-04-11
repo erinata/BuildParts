@@ -47,7 +47,7 @@ As BuildPart utilizes the build system in Sublime Text, it supports any language
 
 ## Limitation
 
-Currently this plugin can only use the build system automatically chosen by Sublime Text. Therefore it will use the `Ruby` build system when the file extension is `.rb`. And this means you can choose to build parts of code using `Python` build system if those code are in a `.rb` file.
+Currently this plugin can only use the build system automatically chosen by Sublime Text. Therefore it will use the `Ruby` build system when the file extension is `.rb`. And this means you cannot choose to build parts of code using `Python` build system if those code are in a `.rb` file.
 
 ## Operating Systems
 
