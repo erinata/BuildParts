@@ -1,6 +1,6 @@
 [
     {
-        "caption": "BuildParts: Test BuildParts",
+        "caption": "BuildParts: Build the selected code",
         "command": "build_parts"
     }
 ]

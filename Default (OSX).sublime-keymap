@@ -1,0 +1,5 @@
+[
+  //{ "keys": ["f7"], "command": "build_parts" },
+  { "keys": ["super+b"], "command": "build_parts" }
+  
+]
