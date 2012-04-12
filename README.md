@@ -20,7 +20,7 @@ Install manually
 
 There is only one command: `BuildParts: Build the selected code`
 
-When you run this command, it will build the code that you have selected using the build system selected by Sublime Text. If you have selected nothing, it will build the whole file.
+When you run this command, this package will build the code that you have selected using the automatically chosen build system. If you have selected nothing, this package will build the whole file.
 
 BuildParts default keybindings are "ctrl+b" (for Windows and Linux) and "super+b" (for Mac). It's the same as the default keybinding for building your code. If you want to invoke the build system for the whole file. Just select nothing and press "ctrl+b".
 
@@ -32,22 +32,22 @@ Suppose you have a document named `testing.rb`
     Puts("World")
     Puts("Everyone")
 
-If you select nothing and press "ctrl+b", Sublime Text will build the whole file and the build output console will show:
+If you select nothing and press "ctrl+b", the package will involve the default behaviour in Sublime Text and build the whole file. The build output console will show:
 
     Hello
     World
     Everyone
 
-Suppose you select the first 2 lines, and press "ctrl+b", Sublime Text will only build the current selected parts and the build output console will show:
+Suppose you select the first 2 lines, and press "ctrl+b", the package will only build the currently selected parts (which is first 2 lines in this case). The build output console will show:
 
     Hello
     World
 
-As BuildPart utilizes the build system in Sublime Text, it supports any language the Sublime Text can build. It also work with custom build systems that are install via packages.
+As BuildParts utilizes the build system in Sublime Text, it supports any language that Sublime Text can build. It also work with custom build systems that are installed via packages.
 
 ## Limitation
 
-Currently this plugin can only use the build system automatically chosen by Sublime Text. Therefore it will use the `Ruby` build system when the file extension is `.rb`. And this means you cannot choose to build parts of code using `Python` build system if those code are in a `.rb` file.
+Currently this package can only use the build system automatically chosen by Sublime Text. Therefore it will always use the `Ruby` build system when the file extension is `.rb`. This means you cannot choose to build parts of your code using `Python` build system if those code are part of a `.rb` file.
 
 ## Operating Systems
 
