@@ -20,7 +20,7 @@ Install manually
 
 There is only one command: `BuildParts: Build the selected code`
 
-When you run this command, this package will build the code that you have selected using the automatically chosen build system. If you have selected nothing, this package will build the whole file.
+When you select some code and invoke this command, this package will build the selected code using the currently chosen build system. If you have selected nothing, this package will build the whole file.
 
 BuildParts default keybindings are "ctrl+b" (for Windows and Linux) and "super+b" (for Mac). It's the same as the default keybinding for building your code. If you want to invoke the build system for the whole file. Just select nothing and press "ctrl+b".
 
@@ -47,7 +47,7 @@ As BuildParts utilizes the build system in Sublime Text, it supports any languag
 
 ## Limitation
 
-Currently this package can only use the build system automatically chosen by Sublime Text. Therefore it will always use the `Ruby` build system when the file extension is `.rb`. This means you cannot choose to build parts of your code using `Python` build system if those code are part of a `.rb` file.
+BuildParts is not supporting multiple selections for now.
 
 ## Operating Systems
 
