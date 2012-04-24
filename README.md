@@ -1,4 +1,4 @@
-# BuildParts (version 0.1.0)
+# BuildParts (version 0.3.0)
 
 This is a Sublime Text plugin for executing (or building) part of your code. 
 
