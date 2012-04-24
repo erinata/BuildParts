@@ -6,6 +6,9 @@ import os
 
 current_new_path = None
 
+#TODO: Make this work for multiple selections.
+#TODO: option to "remove indentation" so that it works better for python
+#TODO: another command (so that it doesn't use ctrl+b) to build the parts selected and put the console output to the document
 class BuildPartsCommand(sublime_plugin.WindowCommand):
     def run(self):
         global current_new_path
@@ -33,10 +36,9 @@ class BuildPartsCommand(sublime_plugin.WindowCommand):
                 self.window.run_command("close")
         else:
             self.window.run_command("build")
-            
 
 
-#        view = self.window.active_view()
+#        view = self.window.active_view()S
 #        reg = view.sel()[0]
 #        selection = view.substr(reg)
 #        print selection
@@ -64,7 +66,6 @@ class BuildPartsEvent(sublime_plugin.EventListener):
     def on_load(self, view):
 
         global current_new_path
-
-        if view.file_name() == current_new_path:
+        if current_new_path != None and view.file_name() == current_new_path:
             view.window().run_command("build")
             view.window().run_command("close")
